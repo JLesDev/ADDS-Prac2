@@ -11,22 +11,22 @@ char Referee::refGame(Human player1, Computer player2) {
     char rMove = player1.makeMove();
     char comMove = player2.makeMove();
     char result = 'T';
-    if(rMove == 'r'){
-        if(comMove == 'r'){
+    if(rMove == 'R'){
+        if(comMove == 'R'){
             result = 'T';
         }
-        else if(comMove == 's'){
+        else if(comMove == 'S'){
             result = 'W';
         }
         else{
             result = 'L';
         }
     }
-    else if(rMove == 's'){
-        if(comMove == 'r'){
+    else if(rMove == 'S'){
+        if(comMove == 'R'){
             result = 'L';
         }
-        else if(comMove == 's'){
+        else if(comMove == 'S'){
             result = 'T';
         }
         else{
@@ -34,10 +34,10 @@ char Referee::refGame(Human player1, Computer player2) {
         }
     }
     else{
-        if(comMove == 'r'){
+        if(comMove == 'R'){
             result = 'W';
         }
-        else if(comMove == 's'){
+        else if(comMove == 'S'){
             result = 'L';
         }
         else{
