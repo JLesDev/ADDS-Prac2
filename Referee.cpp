@@ -7,7 +7,7 @@ Referee::Referee(){
 };
 
 // returns the outcome for player1:  'W', 'L' or 'T' (Win, Lose, Tie)
-char refGame(Human player1, Computer player2) {
+char Referee::refGame(Human player1, Computer player2) {
     char rMove = player1.makeMove();
     char comMove = player2.makeMove();
     char result = 'T';
