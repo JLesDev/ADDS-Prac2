@@ -8,6 +8,8 @@ class Referee{
         
     private:
         char result;
+        char comMove;
+        char rMove;
     public:
     
         Referee();
