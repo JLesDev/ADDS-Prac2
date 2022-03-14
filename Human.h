@@ -1,6 +1,7 @@
 #ifndef Human_hpp
 #define Human_hpp
 
+using namespace std;
 
 class Human{
         
